@@ -17,7 +17,9 @@ namespace GraveManager.Controllers
         // GET: Gm
         public ActionResult Index()
         {
-            return View(db.Graves.ToList());
+            var graves = db.Graves.ToList();
+
+            return View(graves);
         }
 
         // GET: Gm/Details/5
