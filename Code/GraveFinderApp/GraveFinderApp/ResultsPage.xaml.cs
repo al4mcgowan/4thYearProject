@@ -28,14 +28,21 @@ namespace GraveFinderApp
             // Takes the parameter passed from the MainPage in as a variable and stores it in g
             Grave g = e.Parameter as Grave;
 
-            // if g is not empty, print the details
-            DeceasedPerson.Text = "Deceased Person: " + g.Name;
-            Gender.Text = "Gender: " + g.Gender;
-            Cemetery.Text = "Buried in: " + g.Cemetery + " on row: " + g.RowID + " at number " + g.GraveNumber;
-            LastAddress.Text = "Last Address: " + g.Address;
-            DOB.Text = "Born on: " + g.DOB.Date;
-            DOD.Text = "Died on: " + g.DOD.Date;
-            InGrave.Text = "Also in the grave: " + g.InGrave;
+            if (g == null)
+            {
+                DeceasedPerson.Text = "404 Not Found";
+            }
+            else
+            {
+                // if g is not empty, print the details
+                DeceasedPerson.Text = "Deceased Person: " + g.Name;
+                Gender.Text = "Gender: " + g.Gender;
+                Cemetery.Text = "Buried in: " + g.Cemetery + " on row: " + g.RowID + " at number " + g.GraveNumber;
+                LastAddress.Text = "Last Address: " + g.Address;
+                DOB.Text = "Born on: " + g.DOB.Date.ToString("d");
+                DOD.Text = "Died on: " + g.DOD.Date.ToString("d");
+                InGrave.Text = "Also in the grave: " + g.InGrave;
+            }
         }
 
         private void BeginNewSearch(object sender, RoutedEventArgs e)

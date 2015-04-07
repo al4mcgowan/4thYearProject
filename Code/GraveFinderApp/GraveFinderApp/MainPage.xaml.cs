@@ -28,6 +28,11 @@ namespace GraveFinderApp
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+        }
+
         // Called when the search button is pressed
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
@@ -43,17 +48,8 @@ namespace GraveFinderApp
             // Finds the first or default grave from the list based on the deceased person, cemetery name and either the dob or dod
             var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && g.Cemetery.ToUpper() == selectedCemetery.ToUpper() && DateTime.Compare(g.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(g.DOD.Date, selectedDodDate.Date) == 0);
 
-            // If variable is empty, it throws a nullreference exception otherwise goes to a new frame with the variable being
-            // passed
-            if (grave == null)
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                // If grave is not empty, it will pass and navigate to the ResultsPage
-                Frame.Navigate(typeof(ResultsPage), grave);
-            }
+            // It will pass the variable and navigate to the ResultsPage
+            Frame.Navigate(typeof(ResultsPage), grave);
         }
     }
 }

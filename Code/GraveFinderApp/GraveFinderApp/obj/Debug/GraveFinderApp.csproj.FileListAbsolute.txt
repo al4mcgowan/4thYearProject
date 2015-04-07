@@ -1,5 +1,4 @@
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\App.xbf
-C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\MainPage.xbf
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\ResultsPage.xbf
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.xr.xml
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.exe
@@ -9,16 +8,12 @@ C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\Grave
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.build.appxrecipe
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\App.g.i.cs
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\App.g.cs
-C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.g.i.cs
-C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.g.cs
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\ResultsPage.g.i.cs
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\ResultsPage.g.cs
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\XamlTypeInfo.g.cs
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\App.xaml
-C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.xaml
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\ResultsPage.xaml
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\App.xbf
-C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.xbf
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\ResultsPage.xbf
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\XamlSaveStateFile.xml
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\GraveFinderApp.exe
@@ -35,3 +30,8 @@ C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\Grave
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\ProjectArchitectures.txt
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\MainPage.xbf
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.g.i.cs
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.g.cs
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.xaml
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\MainPage.xbf

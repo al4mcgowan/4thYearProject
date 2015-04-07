@@ -9,6 +9,9 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="32"
     Foreground="{StaticResource PhoneForegroundBrush}">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/the-graveyard-shift-moon.png"/>
+    </Page.Background>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -39,25 +42,26 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="GRAVE FINDER" Margin="12,0"/>
-            <TextBlock Text="Search for a grave" Margin="9,-7,0,0" FontSize="28"/>
+            <TextBlock Text="Search for a Grave" Margin="9,-7,0,0" FontSize="28"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel x:Name="SearchContent">
                 <TextBlock Text="Name of Deceased Person" FontSize="20" />
-                <TextBox Name="DeceasedPerson" IsSpellCheckEnabled="True"/>
-                <TextBlock Text="Cemetery" FontSize="20" />
-                <ComboBox x:Name="CemeteryNames" FontSize="16" HorizontalContentAlignment="Center">
+                <TextBox Name="DeceasedPerson" />
+                <TextBlock Text="Name of Cemetery" FontSize="20" Margin="0,0,207,0" />
+                <ComboBox x:Name="CemeteryNames" FontSize="16" HorizontalContentAlignment="Center" PlaceholderText="Select a Cemetery">
                     <ComboBoxItem Content="Deansgrange" HorizontalContentAlignment="Center"/>
                     <ComboBoxItem Content="Glasnevin" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
                     <ComboBoxItem Content="Newlands Cross" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
                 </ComboBox>
-                <TextBlock Text="Date of Birth" FontSize="20" />
-                <DatePicker x:Name="DateOfBirth" Margin="-2,0,262.833,0" HorizontalContentAlignment="Left" />
-                <TextBlock Text="Date of Death" FontSize="20" />
-                <DatePicker x:Name="DateOfDeath" Margin="-2,0,262.833,0" HorizontalContentAlignment="Left" />
-                <Button ClickMode="Press" Name="Search" Click="SearchButton_Click" Content="Search" HorizontalAlignment="Center" />
+                <TextBlock Text="Date of Birth" FontSize="20" Margin="0,0,262.833,0"/>
+                <DatePicker x:Name="DateOfBirth" Margin="-2,0,262.833,0" HorizontalContentAlignment="Left" Height="49" />
+                <TextBlock Text="Date of Death" FontSize="20" Margin="0,-120,-4,0" Height="27" Grid.Column="2" HorizontalAlignment="Right" Width="133" Padding="5,0,0,0" />
+                <DatePicker x:Name="DateOfDeath" Margin="252,-50,9.833,0" HorizontalContentAlignment="Left" Height="49" />
+                <Button ClickMode="Press" Name="Search" Click="SearchButton_Click" Content="Search" HorizontalAlignment="Center" Margin="133,0,133.833,0" />
+                <TextBlock Text="and/or" FontSize="20" Margin="158,-93,156,62"/>
             </StackPanel>
         </Grid>
     </Grid>
