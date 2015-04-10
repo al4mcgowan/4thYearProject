@@ -76,3 +76,4 @@ C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\Grave
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveManager\GraveManager\obj\Release\GraveManager.pdb
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveManager\GraveManager\obj\Release\GraveManager.Migrations.Initial.resources
 C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveManager\GraveManager\obj\Release\GraveManager.csproj.GenerateResource.Cache
+C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveManager\GraveManager\obj\Release\GraveManager.csprojResolveAssemblyReference.cache

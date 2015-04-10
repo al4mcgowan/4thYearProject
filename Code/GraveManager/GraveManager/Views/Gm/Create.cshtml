@@ -109,9 +109,9 @@
         function initialize() {
             var $latitude = document.getElementById('Latitude');
             var $longitude = document.getElementById('Longitude');
-            var latitude = 50.715591133433854
-            var longitude = -3.53485107421875;
-            var zoom = 7;
+            var latitude = 53.3521648;
+            var longitude = -6.2512207;
+            var zoom = 15;
 
             var LatLng = new google.maps.LatLng(latitude, longitude);
 
@@ -121,7 +121,7 @@
                 panControl: false,
                 zoomControl: false,
                 scaleControl: true,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+                mapTypeId: google.maps.MapTypeId.HYBRID
             }
 
             var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -133,10 +133,16 @@
                 draggable: true
             });
 
+            google.maps.event.addListener(marker, 'drag', function (marker) {
+                var latLng = marker.latLng;
+                $latitude.value = latLng.lat().toFixed(7);
+                $longitude.value = latLng.lng().toFixed(7);
+            });
+
             google.maps.event.addListener(marker, 'dragend', function (marker) {
                 var latLng = marker.latLng;
-                $latitude.value = latLng.lat();
-                $longitude.value = latLng.lng();
+                $latitude.value = latLng.lat().toFixed(7);
+                $longitude.value = latLng.lng().toFixed(7);
             });
 
         }
