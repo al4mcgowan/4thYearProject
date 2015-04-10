@@ -6,7 +6,6 @@
 
 <h2>Create</h2>
 
-
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
@@ -103,6 +102,47 @@
             </div>
         </div>
 
+        <div id="map" style="width:500px; height:250px"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script>
+        function initialize() {
+            var $latitude = document.getElementById('Latitude');
+            var $longitude = document.getElementById('Longitude');
+            var latitude = 50.715591133433854
+            var longitude = -3.53485107421875;
+            var zoom = 7;
+
+            var LatLng = new google.maps.LatLng(latitude, longitude);
+
+            var mapOptions = {
+                zoom: zoom,
+                center: LatLng,
+                panControl: false,
+                zoomControl: false,
+                scaleControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: LatLng,
+                map: map,
+                title: 'Drag Me!',
+                draggable: true
+            });
+
+            google.maps.event.addListener(marker, 'dragend', function (marker) {
+                var latLng = marker.latLng;
+                $latitude.value = latLng.lat();
+                $longitude.value = latLng.lng();
+            });
+
+        }
+        initialize();
+        </script>
+        <br />
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />

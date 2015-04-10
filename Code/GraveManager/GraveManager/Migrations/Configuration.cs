@@ -48,8 +48,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1775, 08, 06),
                     DOD = new DateTime(1847, 05, 15),
                     InGrave = "None",
-                    Longitude = 53.3699538,
-                    Latitude = -6.2771961
+                    Longitude = -6.2771961,
+                    Latitude = 53.3699538
                 },
                 new Grave
                 {
@@ -62,8 +62,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1890, 10, 16),
                     DOD = new DateTime(1922, 08, 22),
                     InGrave = "None",
-                    Longitude = 53.369512,
-                    Latitude = -6.276536
+                    Longitude = -6.276536,
+                    Latitude = 53.369512
                 },
                 new Grave
                 {
@@ -76,8 +76,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1872, 03, 31),
                     DOD = new DateTime(1922, 08, 12),
                     InGrave = "Maud Sheehan (Wife), Nevin Griffith and Ita Griffith",
-                    Longitude = 53.371042,
-                    Latitude = -6.2775053
+                    Longitude = -6.2775053,
+                    Latitude = 53.371042
                 },
                 new Grave
                 {
@@ -90,8 +90,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1872, 03, 31),
                     DOD = new DateTime(1920, 06, 12),
                     InGrave = "Mary Bloggs (Wife)",
-                    Longitude = 53.371142,
-                    Latitude = -6.2785053
+                    Longitude = -6.2785053,
+                    Latitude = 53.371142
                 },
                 new Grave
                 {
@@ -104,8 +104,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1992, 02, 18),
                     DOD = new DateTime(2014, 06, 23),
                     InGrave = "Joe McIntyre (Father)",
-                    Longitude = 48.371242,
-                    Latitude = -3.2783053
+                    Longitude = -3.2783053,
+                    Latitude = 48.371242
                 },
                 new Grave 
                 {
@@ -118,8 +118,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1990, 04, 06),
                     DOD = new DateTime(2012, 09, 12),
                     InGrave = "None",
-                    Longitude = 48.371442,
-                    Latitude = -3.2781053
+                    Longitude = -3.2781053,
+                    Latitude = 48.371442
                 },
                 new Grave 
                 {
@@ -132,8 +132,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1968, 02, 17),
                     DOD = new DateTime(2010, 05, 14),
                     InGrave = "Mark Stevens (Husband)",
-                    Longitude = 48.371222,
-                    Latitude = -3.2781051
+                    Longitude = -3.2781051,
+                    Latitude = 48.371222
                 },
                 new Grave 
                 {
@@ -146,8 +146,8 @@ namespace GraveManager.Migrations
                     DOB = new DateTime(1954, 11, 10),
                     DOD = new DateTime(2014, 10, 21),
                     InGrave = "Rita Grogan (Wife)",
-                    Longitude = 48.371242,
-                    Latitude = -3.2783053
+                    Longitude = -3.2783053,
+                    Latitude = 48.371242
                 });
             //  This method will be called after migrating to the latest version.
 

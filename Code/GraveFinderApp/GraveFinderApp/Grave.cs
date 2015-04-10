@@ -27,5 +27,9 @@ namespace GraveFinderApp
         public DateTime DOD { get; set; }
 
         public String InGrave { get; set; }
+
+        public String Longtitude { get; set; }
+
+        public String Latitude { get; set; }
     }
 }
