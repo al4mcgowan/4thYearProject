@@ -63,6 +63,7 @@
                 <TextBlock Text="and/or" FontSize="20" Margin="158,-33,156,62"/>
                 <Button x:ConnectionId='1' ClickMode="Press" Name="SearchButton"                            Content="Search" HorizontalAlignment="Center" Margin="133,-45,133.833,0" />
                 <Button x:ConnectionId='2' ClickMode="Press" Name="Reset"                           Content="Reset" HorizontalAlignment="Center" Margin="-100,-58,160,0" />
+                <Button x:ConnectionId='3' ClickMode="Press" Name="Browse"                           Content="Browse" HorizontalAlignment="Center" Margin="0,-58,-260,0" />
             </StackPanel>
         </Grid>
     </Grid>

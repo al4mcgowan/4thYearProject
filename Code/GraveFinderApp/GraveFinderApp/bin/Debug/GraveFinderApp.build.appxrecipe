@@ -7,58 +7,58 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>3c2c1676-142f-4d07-ad7c-e82d1f7e38b1</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.exe">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.exe">
       <PackagePath>GraveFinderApp.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\the-graveyard-shift-moon.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\the-graveyard-shift-moon.png">
       <PackagePath>Assets\the-graveyard-shift-moon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\Search.xbf">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Search.xbf">
       <PackagePath>Search.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\ResultsPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\ResultsPage.xbf">
       <PackagePath>ResultsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\GraveFinderApp.xr.xml">
       <PackagePath>GraveFinderApp.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Documents\Visual Studio 2013\Projects\4th Year Project\GraveFinderApp\GraveFinderApp\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
