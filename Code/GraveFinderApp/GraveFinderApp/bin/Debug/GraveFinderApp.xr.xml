@@ -68,7 +68,7 @@
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="VerticalContentAlignment" />
     </RootType>
-    <RootType FullName="GraveFinderApp.MainPage" />
+    <RootType FullName="GraveFinderApp.Search" />
     <RootType FullName="GraveFinderApp.ResultsPage" />
   </Roots.RootTypes>
 </Roots>

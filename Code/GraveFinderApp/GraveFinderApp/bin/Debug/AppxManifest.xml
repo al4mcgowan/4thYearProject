@@ -7,8 +7,8 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="a0b8f20a-a20d-4acb-b8a0-42f931f0e0e2" Publisher="CN=Al4mcgowan" Version="1.0.0.0" ProcessorArchitecture="neutral" />
-  <mp:PhoneIdentity PhoneProductId="a0b8f20a-a20d-4acb-b8a0-42f931f0e0e2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="3c2c1676-142f-4d07-ad7c-e82d1f7e38b1" Publisher="CN=Al4mcgowan" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <mp:PhoneIdentity PhoneProductId="3c2c1676-142f-4d07-ad7c-e82d1f7e38b1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GraveFinderApp</DisplayName>
     <PublisherDisplayName>Al4mcgowan</PublisherDisplayName>
@@ -38,7 +38,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
-    <build:Item Name="ProjectGUID" Value="{019F4A47-4831-42F3-B6DE-0B24212C58F2}" />
+    <build:Item Name="ProjectGUID" Value="{4ADBC210-114D-4EEB-AF62-4D4ABC9BC593}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
   </build:Metadata>

@@ -1,7 +1,5 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\al4mcgowan\documents\visual studio 2013\projects\4th year project\gravefinderapp\gravefinderapp\obj\debug\intermediatexaml\gravefinderapp.exe" HashGuid="d16d0d6f-61d2-3571-f409-c979297e9686" />
-    <ReferenceAssembly PathName="c:\users\al4mcgowan\documents\visual studio 2013\projects\4th year project\gravefinderapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
-    <ReferenceAssembly PathName="c:\users\al4mcgowan\documents\visual studio 2013\projects\4th year project\gravefinderapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+    <LocalAssembly PathName="c:\users\al4mcgowan\documents\visual studio 2013\projects\4th year project\gravefinderapp\gravefinderapp\obj\debug\intermediatexaml\gravefinderapp.exe" HashGuid="8f0943c8-d7d2-10ab-274b-8e9458dbd521" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

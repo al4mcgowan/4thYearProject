@@ -6,9 +6,6 @@ using Windows.UI.Xaml.Navigation;
 
 namespace GraveFinderApp
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class ResultsPage : Page
     {
         public ResultsPage()
@@ -18,19 +15,20 @@ namespace GraveFinderApp
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.
-        /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Takes the parameter passed from the MainPage in as a variable and stores it in g
+            // Takes the parameter passed from the Search in as a variable and stores it in g
             Grave g = e.Parameter as Grave;
 
             if (g == null)
             {
                 DeceasedPerson.Text = "404 Not Found";
+                Gender.Text = "";
+                Cemetery.Text = "";
+                LastAddress.Text = "";
+                DOB.Text = "";
+                DOD.Text = "";
+                InGrave.Text = "";
             }
             else
             {
@@ -47,7 +45,7 @@ namespace GraveFinderApp
 
         private void BeginNewSearch(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            Frame.Navigate(typeof(Search));
         }
     }
 }

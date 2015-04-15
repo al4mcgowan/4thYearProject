@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="a0b8f20a-a20d-4acb-b8a0-42f931f0e0e2"
+  <Identity Name="3c2c1676-142f-4d07-ad7c-e82d1f7e38b1"
             Publisher="CN=Al4mcgowan"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="a0b8f20a-a20d-4acb-b8a0-42f931f0e0e2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="3c2c1676-142f-4d07-ad7c-e82d1f7e38b1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>GraveFinderApp</DisplayName>
