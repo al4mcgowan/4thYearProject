@@ -125,7 +125,7 @@ namespace Gm.Migrations
                 },
                 new Grave
                 {
-                    Cemetery = "Newlands Cross",
+                    Cemetery = "Deansgrange",
                     RowID = "F",
                     GraveNumber = 44,
                     Name = "Ann Stevens",
@@ -139,7 +139,7 @@ namespace Gm.Migrations
                 },
                 new Grave
                 {
-                    Cemetery = "Newlands Cross",
+                    Cemetery = "Deansgrange",
                     RowID = "Michael",
                     GraveNumber = 14,
                     Name = "Ben Grogan",
