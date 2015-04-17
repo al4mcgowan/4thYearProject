@@ -63,7 +63,8 @@
                 <TextBlock Text="and/or" FontSize="20" Margin="158,-33,156,62"/>
                 <Button ClickMode="Press" Name="SearchButton" Click="SearchButton_Click" Content="Search" HorizontalAlignment="Center" Margin="133,-45,133.833,0" />
                 <Button ClickMode="Press" Name="Reset" Click="ResetButton_Click" Content="Reset" HorizontalAlignment="Center" Margin="-100,-58,160,0" />
-                <Button ClickMode="Press" Name="Browse" Click="ResetButton_Click" Content="Browse" HorizontalAlignment="Center" Margin="0,-58,-260,0" />
+                <Button ClickMode="Press" Name="Browse" Click="BrowseButton_Click" Content="Browse" HorizontalAlignment="Center" Margin="0,-58,-260,0" />
+                <Button ClickMode="Press" Name="Exit" Click="ExitButton_Click" Content="Exit" HorizontalAlignment="Center" Margin="-260,0,0,0" />
             </StackPanel>
         </Grid>
     </Grid>

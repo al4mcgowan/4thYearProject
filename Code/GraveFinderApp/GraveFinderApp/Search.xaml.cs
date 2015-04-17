@@ -1,6 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -11,6 +13,7 @@ namespace GraveFinderApp
 {
     public sealed partial class Search : Page
     {
+
         // Contains a list of graves for testing purposes
         List<Grave> graves = new List<Grave> 
         {
@@ -27,13 +30,11 @@ namespace GraveFinderApp
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            
         }
 
-        // Called when the search button is pressed
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        private async void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            // Either dates have changed
             DateTimeOffset selectedDobDate = this.DateOfBirth.Date;
             DateTimeOffset selectedDodDate = this.DateOfDeath.Date;
 
@@ -41,18 +42,64 @@ namespace GraveFinderApp
             int dobyear = selectedDobDate.Year;
             int dodyear = selectedDodDate.Year;
 
-            // Checks if either of the years dont match the current year
-            if (dobyear != DateTime.Now.Year || dodyear != DateTime.Now.Year)
+            try
             {
-                var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && g.DOB.Year == dobyear || g.DOD.Year == dodyear);
-                Frame.Navigate(typeof(ResultsPage), grave);
+                using (HttpClient client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("https://gmanager.azurewebsites.net/");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // GET ../api/Graves/
+                    HttpResponseMessage response = await client.GetAsync("api/Graves");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // read result 
+                        var entries = await response.Content.ReadAsAsync<IEnumerable<Grave>>();
+                        foreach (var grave in entries)
+                        {
+                            if (dobyear != DateTime.Now.Year || dodyear != DateTime.Now.Year)
+                            {
+                                var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && g.DOB.Year == dobyear || g.DOD.Year == dodyear);
+                                Frame.Navigate(typeof(ResultsPage), grave);
+                            }
+                            else
+                            {
+                                var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && DateTime.Compare(g.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(g.DOD.Date, selectedDodDate.Date) == 0);
+                                Frame.Navigate(typeof(ResultsPage), grave);
+                            }
+                        }
+                    }
+                }
             }
-            else
+            catch (Exception e)
             {
-                var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && DateTime.Compare(g.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(g.DOD.Date, selectedDodDate.Date) == 0);
-                Frame.Navigate(typeof(ResultsPage), grave);
+                
             }
         }
+
+        // Called when the search button is pressed
+        //private void SearchButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // Either dates have changed
+        //    DateTimeOffset selectedDobDate = this.DateOfBirth.Date;
+        //    DateTimeOffset selectedDodDate = this.DateOfDeath.Date;
+
+        //    // Or only the years have changed
+        //    int dobyear = selectedDobDate.Year;
+        //    int dodyear = selectedDodDate.Year;
+
+        //    // Checks if either of the years dont match the current year
+        //    if (dobyear != DateTime.Now.Year || dodyear != DateTime.Now.Year)
+        //    {
+        //        var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && g.DOB.Year == dobyear || g.DOD.Year == dodyear);
+        //        Frame.Navigate(typeof(ResultsPage), grave);
+        //    }
+        //    else
+        //    {
+        //        var grave = graves.FirstOrDefault(g => g.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && DateTime.Compare(g.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(g.DOD.Date, selectedDodDate.Date) == 0);
+        //        Frame.Navigate(typeof(ResultsPage), grave);
+        //    }
+        //}
 
         // Called when the reset button is pressed
         private void ResetButton_Click(object sender, RoutedEventArgs e)
@@ -61,6 +108,16 @@ namespace GraveFinderApp
             CemeteryNames.SelectedValue = CemeteryNames.PlaceholderText;
             DateOfBirth.Date = DateTime.Now;
             DateOfDeath.Date = DateTime.Now;
+        }
+
+        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
         }
     }
 }
