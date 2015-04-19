@@ -6,9 +6,18 @@
 
 <h2>Grave Manager</h2>
 
-<p>
+<p style="float:left">
     @Html.ActionLink("Add a New Grave", "Create")
 </p>
+
+@using (Html.BeginForm())
+{
+    <p style="float:right">
+        Search by name/cemetery: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
 <table class="table">
     <tr>
         <th>

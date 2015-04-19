@@ -90,14 +90,9 @@ namespace GraveFinderApp
             DateOfDeath.Date = DateTime.Now;
         }
 
-        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Browse));
-        }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
         }
     }
 }

@@ -15,8 +15,15 @@ namespace Gm.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Gm
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                var graves = from g in db.Graves select g;
+                graves = graves.Where(g => g.Cemetery.Contains(searchString)
+                                      || g.Name.Contains(searchString));
+                return View(graves.ToList());
+            }
             return View(db.Graves.ToList());
         }
 
