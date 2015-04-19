@@ -86,12 +86,12 @@ namespace Gm.Migrations
                     Cemetery = "Glasnevin Cemetery",
                     RowID = "ZE",
                     GraveNumber = 26,
-                    Name = "Joe Bloggs",
+                    Name = "Joseph Byrne",
                     Gender = GenderType.Male,
                     Address = "123 Malahide Road, Dublin",
                     DOB = new DateTime(1872, 03, 31),
                     DOD = new DateTime(1920, 06, 12),
-                    InGrave = "Mary Bloggs (Wife)",
+                    InGrave = "Mary Byrne (Sister)",
                     Longitude = -6.2785053,
                     Latitude = 53.371142
                 },
@@ -102,12 +102,12 @@ namespace Gm.Migrations
                     GraveNumber = 36,
                     Name = "Tina McIntyre",
                     Gender = GenderType.Female,
-                    Address = "Builders Yard, Meath Street, Clondalkin, Dublin 22",
+                    Address = "Builders Yard, Clondalkin, Dublin 22",
                     DOB = new DateTime(1992, 02, 18),
                     DOD = new DateTime(2014, 06, 23),
                     InGrave = "Joe McIntyre (Father)",
-                    Longitude = -3.2783053,
-                    Latitude = 48.371242
+                    Longitude = -6.377879,
+                    Latitude = 53.311166
                 },
                 new Grave
                 {
@@ -120,13 +120,13 @@ namespace Gm.Migrations
                     DOB = new DateTime(1990, 04, 06),
                     DOD = new DateTime(2012, 09, 12),
                     InGrave = "None",
-                    Longitude = -3.2781053,
-                    Latitude = 48.371442
+                    Longitude = -6.378999,
+                    Latitude = 53.311091
                 },
                 new Grave
                 {
-                    Cemetery = "Newlands Cross",
-                    RowID = "F",
+                    Cemetery = "Deansgrange",
+                    RowID = "Patrick",
                     GraveNumber = 44,
                     Name = "Ann Stevens",
                     Gender = GenderType.Female,
@@ -134,12 +134,12 @@ namespace Gm.Migrations
                     DOB = new DateTime(1968, 02, 17),
                     DOD = new DateTime(2010, 05, 14),
                     InGrave = "Mark Stevens (Husband)",
-                    Longitude = -3.2781051,
-                    Latitude = 48.371222
+                    Longitude = -6.167571,
+                    Latitude = 53.283016
                 },
                 new Grave
                 {
-                    Cemetery = "Newlands Cross",
+                    Cemetery = "Deansgrange",
                     RowID = "Michael",
                     GraveNumber = 14,
                     Name = "Ben Grogan",
@@ -148,8 +148,8 @@ namespace Gm.Migrations
                     DOB = new DateTime(1954, 11, 10),
                     DOD = new DateTime(2014, 10, 21),
                     InGrave = "Rita Grogan (Wife)",
-                    Longitude = -3.2783053,
-                    Latitude = 48.371242
+                    Longitude = -6.169811,
+                    Latitude = 53.279020
                 });
             //  This method will be called after migrating to the latest version.
 

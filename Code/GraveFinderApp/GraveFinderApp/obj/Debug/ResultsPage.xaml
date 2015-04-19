@@ -52,6 +52,7 @@
                 <TextBlock Name="LastAddress" FontSize="18"/>
                 <TextBlock Name="Cemetery" FontSize="18" />
                 <TextBlock Name="InGrave" FontSize="18" />
+                <WebView x:Name="MapWebView" Width="Auto" Height="164" Margin="0,0,-0.167,0"/>
                 <Button x:ConnectionId='1' x:Name="NewSearch" Content="Start a New Search" ClickMode="Press"                        />
             </StackPanel>
         </Grid>

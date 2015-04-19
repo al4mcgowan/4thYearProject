@@ -6,6 +6,11 @@ Assets\StoreLogo.scale-240.png
 Assets\the-graveyard-shift-moon.png
 Assets\WideLogo.scale-240.png
 App.xbf
+Browse.xbf
 GraveFinderApp.xr.xml
 ResultsPage.xbf
 Search.xbf
+htmlPage\default.html
+map.css
+map.html
+map.js

@@ -8,7 +8,7 @@ namespace GraveFinderApp
 {
     public enum GenderType { Male, Female };
 
-    class Grave
+    public class Grave
     {
         public String Cemetery { get; set; }
 

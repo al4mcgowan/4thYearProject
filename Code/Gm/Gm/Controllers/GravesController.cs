@@ -17,7 +17,7 @@ namespace Gm.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/Graves
-        public IQueryable<Grave> GetGraves()
+        public IEnumerable<Grave> GetGraves()
         {
             return db.Graves;
         }
