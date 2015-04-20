@@ -63,7 +63,8 @@
                 <TextBlock Text="and/or" FontSize="20" Margin="158,-33,156,62"/>
                 <Button ClickMode="Press" Click="SearchButton_Click" Content="Search" Margin="133,-45,133.833,0" />
                 <Button ClickMode="Press" Click="ResetButton_Click" Content="Reset" Margin="0,-58,160,0" />
-                <Button ClickMode="Press" Click="HelpButton_Click" Content="Help" HorizontalAlignment="Center" Margin="0,-58,-260,0" />
+                <Button ClickMode="Press" Click="HomeButton_Click" Content="Home" Margin="0,0,160,0" />
+                <Button ClickMode="Press" Click="HelpButton_Click" Content="Help" HorizontalAlignment="Center" Margin="0,-170,-260,0" />
             </StackPanel>
         </Grid>
     </Grid>

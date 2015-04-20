@@ -17,9 +17,6 @@ namespace GraveFinderApp
     public sealed partial class Search : Page
     {
 
-        // Contains a list of graves for testing purposes
-        List<Grave> graves = new List<Grave>();
-
         public Search()
         {
             this.InitializeComponent();
@@ -53,20 +50,19 @@ namespace GraveFinderApp
                     if (response.IsSuccessStatusCode)
                     {
                         // read result 
-                        var entries = await response.Content.ReadAsAsync<IEnumerable<Grave>>();
-                        foreach (var grave in entries)
+                        var graves = await response.Content.ReadAsAsync<IEnumerable<Grave>>();
+                        foreach (var grave in graves)
                         {
-                            graves.Add(grave);
-                        }
-                        if (dobyear != DateTime.Now.Year || dodyear != DateTime.Now.Year)
-                        {
-                            var g = graves.Find(gr => gr.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && gr.DOB.Year == dobyear || gr.DOD.Year == dodyear);
-                            Frame.Navigate(typeof(ResultsPage), g);
-                        }
-                        else
-                        {
-                            var g = graves.FindAll(gr => gr.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && DateTime.Compare(gr.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(gr.DOD.Date, selectedDodDate.Date) == 0);
-                            Frame.Navigate(typeof(ResultsPage), g);
+                            if (dobyear != DateTime.Now.Year || dodyear != DateTime.Now.Year)
+                            {
+                                var g = graves.FirstOrDefault(gr => gr.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && gr.DOB.Year == dobyear || gr.DOD.Year == dodyear);
+                                Frame.Navigate(typeof(ResultsPage), g);
+                            }
+                            else
+                            {
+                                var g = graves.FirstOrDefault(gr => gr.Name.ToUpper() == DeceasedPerson.Text.ToUpper() && DateTime.Compare(gr.DOB.Date, selectedDobDate.Date) == 0 || DateTime.Compare(gr.DOD.Date, selectedDodDate.Date) == 0);
+                                Frame.Navigate(typeof(ResultsPage), g);
+                            }
                         }
                     }
                     else
@@ -92,7 +88,12 @@ namespace GraveFinderApp
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Navigate(typeof(Help));
+        }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Home));
         }
     }
 }

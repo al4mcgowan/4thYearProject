@@ -47,9 +47,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">      <!-- l, t,r,b-->
-            <Button Content="Browse Graves"  VerticalAlignment="Top" Margin="125,94,0,0" ClickMode="Press" Click="BrowseButton_Click" />
+            <Button Content="Browse Graves"  Margin="125,94,0,370" ClickMode="Press" Click="BrowseButton_Click" />
             <Button Content="Search Graves" Margin="125,94,0,280" ClickMode="Press" Click="SearchButton_Click" />
-            <Button Content="Exit"  Margin="140,94,0,170" ClickMode="Press" Click="ExitButton_Click" />
+            <Button Content="Exit"  Margin="140,180,0,271" ClickMode="Press" Click="ExitButton_Click" />
         </Grid>
     </Grid>
 </Page>

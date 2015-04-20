@@ -20,8 +20,6 @@ namespace GraveFinderApp
     /// </summary>
     public sealed partial class Browse : Page
     {
-        List<Grave> graves = new List<Grave>();
-
         public Browse()
         {
             this.InitializeComponent();
@@ -34,14 +32,14 @@ namespace GraveFinderApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            ReadData();
         }
 
         public async void ReadData()
         {
             try
             {
-                using (HttpClient client = new HttpClient())
+                using(HttpClient client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("https://gmanager.azurewebsites.net/");
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -50,19 +48,15 @@ namespace GraveFinderApp
                     HttpResponseMessage response = await client.GetAsync("api/Graves");
                     if (response.IsSuccessStatusCode)
                     {
-                        // read result 
-                        var entries = await response.Content.ReadAsAsync<IEnumerable<Grave>>();
-                        foreach (var grave in entries)
+                        var graves = await response.Content.ReadAsAsync<IEnumerable<Grave>>();
+                        foreach (var grave in graves)
                         {
-                            graves.Add(grave);
+                            ListOfGraves.Items.Add("Name: " + grave.Name + "\nGender: " + grave.Gender + "\nCemetery: " + grave.Cemetery
+                                                    + "\nLast Address: " + grave.Address + "\nDate of Birth: " + grave.DOB.Date.ToString("dd/MM/yyyy")
+                                                    + "\nDate of Death: " + grave.DOD.Date.ToString("dd/MM/yyyy") + "\nOthers in grave: " + grave.InGrave + "\n");
+                            ListOfGraves.SelectionMode = ListViewSelectionMode.None;
+                            ListOfGraves.IsItemClickEnabled = false;
                         }
-                        ListOfGraves = new ListBox();
-                        ListOfGraves.Width = 140;
-                        ListOfGraves.ItemsSource = graves;
-                    }
-                    else
-                    {
-                        Debug.WriteLine(response.StatusCode);
                     }
                 }
             }
@@ -74,7 +68,7 @@ namespace GraveFinderApp
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Search));
+            Frame.Navigate(typeof(Home));
         }
     }
 }

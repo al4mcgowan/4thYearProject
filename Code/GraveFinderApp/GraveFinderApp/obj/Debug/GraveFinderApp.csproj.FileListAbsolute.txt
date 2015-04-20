@@ -108,6 +108,16 @@ C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\ob
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Browse.xbf
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Browse.xaml
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Browse.xbf
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Home.g.i.cs
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Home.g.cs
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Home.xaml
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Home.xbf
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Help.xbf
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Home.xbf
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Help.g.i.cs
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Help.g.cs
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Help.xaml
+C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Help.xbf
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\GraveFinderApp.csprojResolveAssemblyReference.cache
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
 C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate

@@ -47,15 +47,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Margin="12,45,12,70" Grid.RowSpan="2">
-            <ListBox x:Name="ListOfGraves" Margin="0,55,0,10">
-                <ListBox.ItemTemplate>
+            <ListView x:Name="ListOfGraves" Margin="0,55,0,10">
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel x:Name="StackList" Orientation="Vertical">
-                         <TextBlock Text="{Binding Name}" />
-                        </StackPanel>
+                        <TextBlock Text="{Binding}" FontSize="26"/>
                     </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+                </ListView.ItemTemplate>
+            </ListView>
             <Button x:Name="Back" Content="Back" Click="BackButton_Click" Margin="0,524,0,-56"></Button>
         </Grid>
     </Grid>
