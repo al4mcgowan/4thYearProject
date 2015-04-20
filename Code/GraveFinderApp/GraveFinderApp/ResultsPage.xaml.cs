@@ -43,5 +43,10 @@ namespace GraveFinderApp
         {
             Frame.Navigate(typeof(Search));
         }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Home));
+        }
     }
 }

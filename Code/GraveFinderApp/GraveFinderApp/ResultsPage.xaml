@@ -54,6 +54,7 @@
                 <TextBlock Name="InGrave" FontSize="18" />
                 <WebView x:Name="MapWebView" Width="Auto" Height="158" Margin="0,10,-0.167,0"/>
                 <Button x:Name="NewSearch" Content="Start a New Search" ClickMode="Press" Click="BeginNewSearch" />
+                <Button ClickMode="Press" Click="HomeButton_Click" Content="Home" Margin="200,-58,0,0" />
             </StackPanel>
         </Grid>
     </Grid>
