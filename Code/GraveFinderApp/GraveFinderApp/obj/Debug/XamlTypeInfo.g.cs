@@ -124,23 +124,25 @@ namespace GraveFinderApp.GraveFinderApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "GraveFinderApp.Browse";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "GraveFinderApp.Help";
-            _typeNameTable[4] = "GraveFinderApp.Home";
-            _typeNameTable[5] = "GraveFinderApp.Search";
-            _typeNameTable[6] = "GraveFinderApp.ResultsPage";
+            _typeNameTable[3] = "GraveFinderApp.CemInfo";
+            _typeNameTable[4] = "GraveFinderApp.Help";
+            _typeNameTable[5] = "GraveFinderApp.Home";
+            _typeNameTable[6] = "GraveFinderApp.Search";
+            _typeNameTable[7] = "GraveFinderApp.ResultsPage";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::GraveFinderApp.Browse);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::GraveFinderApp.Help);
-            _typeTable[4] = typeof(global::GraveFinderApp.Home);
-            _typeTable[5] = typeof(global::GraveFinderApp.Search);
-            _typeTable[6] = typeof(global::GraveFinderApp.ResultsPage);
+            _typeTable[3] = typeof(global::GraveFinderApp.CemInfo);
+            _typeTable[4] = typeof(global::GraveFinderApp.Help);
+            _typeTable[5] = typeof(global::GraveFinderApp.Home);
+            _typeTable[6] = typeof(global::GraveFinderApp.Search);
+            _typeTable[7] = typeof(global::GraveFinderApp.ResultsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,10 +178,11 @@ namespace GraveFinderApp.GraveFinderApp_XamlTypeInfo
         }
 
         private object Activate_0_Browse() { return new global::GraveFinderApp.Browse(); }
-        private object Activate_3_Help() { return new global::GraveFinderApp.Help(); }
-        private object Activate_4_Home() { return new global::GraveFinderApp.Home(); }
-        private object Activate_5_Search() { return new global::GraveFinderApp.Search(); }
-        private object Activate_6_ResultsPage() { return new global::GraveFinderApp.ResultsPage(); }
+        private object Activate_3_CemInfo() { return new global::GraveFinderApp.CemInfo(); }
+        private object Activate_4_Help() { return new global::GraveFinderApp.Help(); }
+        private object Activate_5_Home() { return new global::GraveFinderApp.Home(); }
+        private object Activate_6_Search() { return new global::GraveFinderApp.Search(); }
+        private object Activate_7_ResultsPage() { return new global::GraveFinderApp.ResultsPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -206,30 +209,37 @@ namespace GraveFinderApp.GraveFinderApp_XamlTypeInfo
                 xamlType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  GraveFinderApp.Help
+            case 3:   //  GraveFinderApp.CemInfo
                 userType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Help;
+                userType.Activator = Activate_3_CemInfo;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  GraveFinderApp.Home
+            case 4:   //  GraveFinderApp.Help
                 userType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Home;
+                userType.Activator = Activate_4_Help;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  GraveFinderApp.Search
+            case 5:   //  GraveFinderApp.Home
                 userType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Search;
+                userType.Activator = Activate_5_Home;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  GraveFinderApp.ResultsPage
+            case 6:   //  GraveFinderApp.Search
                 userType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_ResultsPage;
+                userType.Activator = Activate_6_Search;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  GraveFinderApp.ResultsPage
+                userType = new global::GraveFinderApp.GraveFinderApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_ResultsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

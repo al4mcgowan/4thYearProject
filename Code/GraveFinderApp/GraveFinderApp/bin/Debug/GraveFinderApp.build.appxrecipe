@@ -73,11 +73,23 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\htmlPage\default.html">
+      <PackagePath>htmlPage\default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\mymap.html">
+      <PackagePath>mymap.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\mymap.css">
+      <PackagePath>mymap.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Browse.xbf">
       <PackagePath>Browse.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\CemInfo.xbf">
+      <PackagePath>CemInfo.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Al4mcgowan\Desktop\4thYearProject\Code\GraveFinderApp\GraveFinderApp\bin\Debug\Help.xbf">
       <PackagePath>Help.xbf</PackagePath>

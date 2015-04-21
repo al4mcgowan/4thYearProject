@@ -182,6 +182,9 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
+  background-color: #009ACD;
+  border-color: #009ACD;
+  color: white;
   -webkit-appearance: button;
 }
 
@@ -4545,6 +4548,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-toggle {
   border-color: #333333;
+  background-color:#101010;
 }
 
 .navbar-inverse .navbar-toggle:hover,

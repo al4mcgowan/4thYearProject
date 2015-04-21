@@ -51,8 +51,8 @@
                 <TextBlock Text="1. Enter the name of deceased person" FontSize="19" TextAlignment="Justify"/>
                 <TextBlock Text="2. Select the name of the Cemetery from the list" FontSize="19" TextAlignment="Justify" TextWrapping="Wrap"/>
                 <TextBlock Text="3. Enter either the persons date of birth  and/or date of death" FontSize="19" TextAlignment="Justify" TextWrapping="Wrap"/>
-                <TextBlock Text="4. Press search to return the details of the deceased person" FontSize="19" TextAlignment="Justify" TextWrapping="Wrap"/>
-                <Button x:ConnectionId='1' Content="Back"                          Margin="0,524,0,-56"/>
+                <TextBlock Text="4. Press search to return the details of the deceased person with their location" FontSize="19" TextAlignment="Justify" TextWrapping="Wrap"/>
+                <Button x:ConnectionId='1' Content="Back"                          Margin="0,0,0,-56"/>
             </StackPanel>
         </Grid>
     </Grid>

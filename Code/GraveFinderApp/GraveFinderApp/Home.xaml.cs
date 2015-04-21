@@ -50,5 +50,10 @@ namespace GraveFinderApp
         {
             Application.Current.Exit();
         }
+
+        private void CemInfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CemInfo));
+        }
     }
 }

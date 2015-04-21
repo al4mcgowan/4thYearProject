@@ -36,11 +36,14 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ClickMode" />
+      <RootProperty Name="Width" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -49,17 +52,18 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextAlignment" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="GraveFinderApp.Browse" />
+    <RootType FullName="GraveFinderApp.CemInfo" />
     <RootType FullName="GraveFinderApp.Help" />
     <RootType FullName="GraveFinderApp.Home" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
