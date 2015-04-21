@@ -61,10 +61,10 @@
                 <TextBlock Text="Date of Death" FontSize="20" Margin="0,-120,-4,0" Height="27" Grid.Column="2" HorizontalAlignment="Right" Width="133" Padding="5,0,0,0" />
                 <DatePicker x:Name="DateOfDeath" Margin="252,-50,9.833,0" HorizontalContentAlignment="Left" Height="49" />
                 <TextBlock Text="and/or" FontSize="20" Margin="158,-33,156,62"/>
-                <Button x:ConnectionId='1' ClickMode="Press"                            Content="Search" Margin="133,-45,133.833,0" />
+                <Button x:ConnectionId='1' ClickMode="Press"                            Content="Search" Margin="133,-47,0,0" />
                 <Button x:ConnectionId='2' ClickMode="Press"                           Content="Reset" Margin="0,-58,160,0" />
-                <Button x:ConnectionId='3' ClickMode="Press"                          Content="Home" Margin="0,0,160,0" />
-                <Button x:ConnectionId='4' ClickMode="Press"                          Content="Help" HorizontalAlignment="Center" Margin="0,-170,-260,0" />
+                <Button x:ConnectionId='3' ClickMode="Press"                          Content="Help" Margin="260,-58,0,0" />
+                <Button x:ConnectionId='4' ClickMode="Press"                          Content="Home" Margin="0,-0,160,0" />
             </StackPanel>
         </Grid>
     </Grid>

@@ -41,7 +41,6 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ClickMode" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
