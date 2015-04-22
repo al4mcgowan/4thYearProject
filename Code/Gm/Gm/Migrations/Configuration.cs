@@ -102,7 +102,7 @@ namespace Gm.Migrations
                     GraveNumber = 36,
                     Name = "Tina McIntyre",
                     Gender = GenderType.Female,
-                    Address = "Builders Yard, Clondalkin, Dublin 22",
+                    Address = "14 Bawnogue, Clondalkin, Dublin 22",
                     DOB = new DateTime(1992, 02, 18),
                     DOD = new DateTime(2014, 06, 23),
                     InGrave = "Joe McIntyre (Father)",
